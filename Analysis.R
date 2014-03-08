@@ -30,17 +30,17 @@ officialparty<-a$officialparty
 party_ix <-c()
 for(i in 1:length(age)) { party_ix[i]<-1
                         if(officialparty[i]=="R") party_ix[i]<-2
-  if(officialparty[i]=="I") party_ix[i]<-3
-  if(officialparty[i]=="E") party_ix[i]<-4
-  if(officialparty[i]=="O") party_ix[i]<-5
-  if(officialparty[i]=="U") party_ix[i]<-6
+  else if(officialparty[i]=="I") party_ix[i]<-3
+  else if(officialparty[i]=="E") party_ix[i]<-4
+  else if(officialparty[i]=="O") party_ix[i]<-5
+  else if(officialparty[i]=="U") party_ix[i]<-6
 }
 
 ## Create a new data set
 fl <- data.frame(age, age_ix,sex,sex_ix,party_ix,vh10g)
 fl.voted <-as.numeric(fl$vh10g >0)
 
-reg.rep<-glm(fl.voted~age+sex_ix+party_ix,family=binomial,data=fl.rep)
+reg.rep<-glm(fl.voted~age+sex_ix+party_ix,family=binomial,data=fl)
 summary(reg.rep)
 coef(reg.rep)
 d.coef <-coef(reg.rep)
