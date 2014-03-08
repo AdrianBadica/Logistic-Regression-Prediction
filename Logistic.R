@@ -14,7 +14,7 @@ for(i in 1:length(age)) { age_ix[i]<-1
 age_ix
 
 ## Change NA values in vh10g to 0 ##
-vh10g <- a$(vh10g)
+vh10g <- a$vh10g
 vh10g[is.na(vh10g)] <- 0
 
 ## Create sex numeric code (male =1, female =2) ##
