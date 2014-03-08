@@ -49,6 +49,6 @@ d.coef
 pre.prob <- fitted(reg.rep)
 
 b<-data.frame(pre.prob)
-write.table(b, "C:\\yangh\\lifan\\Lifan_prediction.csv", sep=",")
+write.table(b, "C:\\lifan\\Lifan_prediction.csv", sep=",")
 
 
