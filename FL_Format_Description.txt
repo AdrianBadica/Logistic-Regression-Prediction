@@ -1,0 +1,10 @@
+1=Voted	
+2=Voted	by	Absentee/Mail
+3=Republican	Ballot
+4=Republican	Absentee/Ballot	
+5=Democrat	Ballot	
+6=Democrat	Absentee/Mail	Ballot
+7=Voted	Ballot	
+8=Republican	Early	Ballot	
+9=Democrat	Early	Ballot
+0=Did	Not	Vote
