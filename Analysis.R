@@ -53,7 +53,7 @@ d.coef
 print("Chi-Square Test (All Data)")
 chisq.test(fl$sex,fl$vh10g)
 chisq.test(fl$age_ix,fl$vh10g)
-chisq.test(fl$officialparty,fl$vh10g)
+chisq.test(fl$party_ix,fl$vh10g)
 
 ## analysis by party - Democrate and Republican
 ## Democrate  ##
